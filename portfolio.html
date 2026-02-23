@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - iJunior Soluções Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-category { margin-top: 60px; margin-bottom: 30px; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .portfolio-card { 
+            background: #111; 
+            padding: 25px; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            text-align: center; 
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .portfolio-card:hover {
+            border-color: var(--highlight-1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(14, 172, 227, 0.1);
+        }
+        .portfolio-card h4 { color: #fff; margin-bottom: 15px; font-size: 1.2rem; }
+        .portfolio-card span { 
+            color: var(--highlight-1); 
+            font-weight: 600; 
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid #333;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="portfolio">
+    
+    <div id="custom-cursor" class="custom-cursor"></div>
+
+    <header>
+        <div class="logo">
+            <img src="ijunior-logo.png" alt="iJunior" height="40">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="aboutus.html">Sobre Nós</a></li>
+                <li class="dropdown">
+                    <a href="#">Nossos Produtos ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="start.html">Sites Start</a>
+                        <a href="market.html">Lojas Market</a>
+                        <a href="loop.html">Sistemas Loop</a>
+                        <a href="next.html">Aplicativos Next</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <canvas id="topo-canvas"></canvas>
+        <div class="banner-content">
+            <h1 class="gradient-text" style="font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px;">Projetos de sucesso</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #ccc;">
+                A iJunior trabalha com a inovação, proporcionamos a capacitação necessária para que os nossos colaboradores saibam atender exatamente a sua demanda.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-container">
+        
+        <div class="portfolio-category">
+            <h2 class="gradient-text" style="font-size: 2.5rem; border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 30px;">Sites</h2>
+            <div class="portfolio-grid">
+                <a href="https://draanacristinastancioli.com/" target="_blank" class="portfolio-card">
+                    <h4>Dra. Ana Cristina Stancioli</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://aerojr.com/" target="_blank" class="portfolio-card">
+                    <h4>Aero Jr.</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://generalgeousa.com/" target="_blank" class="portfolio-card">
+                    <h4>General Geo</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://sinergiaufv.com/" target="_blank" class="portfolio-card">
+                    <h4>Sinergia UFV</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://clinicasextraordinarias.com.br/" target="_blank" class="portfolio-card">
+                    <h4>Clínicas Extraordinárias</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://globaltetris.com.br/GlobalTetris/" target="_blank" class="portfolio-card">
+                    <h4>Global Tetris</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://ufmgephis.com.br/" target="_blank" class="portfolio-card">
+                    <h4>EPHIS UFMG</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://celtaengenharia.com.br/" target="_blank" class="portfolio-card">
+                    <h4>Celta Engenharia</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://eqjunior.com.br/" target="_blank" class="portfolio-card">
+                    <h4>EQ Júnior</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+                <a href="https://ciclofraterno.org/" target="_blank" class="portfolio-card">
+                    <h4>Ciclo Fraterno</h4>
+                    <span>Acessar Site ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-category">
+            <h2 class="gradient-text" style="font-size: 2.5rem; border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 30px;">Lojas Virtuais</h2>
+            <div class="portfolio-grid">
+                <a href="https://desenvolvimento.ijunior.com.br/Cocarive/" target="_blank" class="portfolio-card">
+                    <h4>Cocarive</h4>
+                    <span>Acessar Loja ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-category">
+            <h2 class="gradient-text" style="font-size: 2.5rem; border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 30px;">Sistemas Web</h2>
+            <div class="portfolio-grid">
+                <a href="https://www.manualpredial.com/" target="_blank" class="portfolio-card">
+                    <h4>Manual Predial</h4>
+                    <span>Acessar Sistema ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="portfolio-category">
+            <h2 class="gradient-text" style="font-size: 2.5rem; border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 30px;">Aplicativos</h2>
+            <div class="portfolio-grid">
+                <a href="https://play.google.com/store/apps/details?id=com.jbcursos.mirax" target="_blank" class="portfolio-card" style="border-color: var(--highlight-1);">
+                    <h4>Mirax</h4>
+                    <span>Baixar na Play Store ↗</span>
+                </a>
+            </div>
+            
+            <h3 style="margin-top: 40px; margin-bottom: 15px; color: #fff;">O que nosso cliente diz:</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/xYn1Un_kmic" title="Depoimento Mirax" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <a href="https://wa.me/5531996575102" class="float-whatsapp" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <div class="footer-col">
+            <h4>Quem somos</h4>
+            <p>Empresa júnior de Computação da UFMG, há mais de 30 anos desenvolvendo soluções digitais de excelência e transformando realidades.</p>
+            <br>
+            <a href="https://wa.me/5531996575102" class="btn-rainbow" style="display: inline-block; text-align:center;">Converse conosco!</a>
+        </div>
+        <div class="footer-col">
+            <h4>Nossos Serviços</h4>
+            <a href="start.html">Desenvolvimento de Sites</a>
+            <a href="market.html">Desenvolvimento de Lojas Virtuais</a>
+            <a href="loop.html">Desenvolvimento de Sistemas</a>
+            <a href="next.html">Desenvolvimento de Aplicativos</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contato</h4>
+            <p>contato@ijunior.com.br</p>
+            <p>+55 31 99657-5102</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ufmginformaticajr"><img src="facebook-icon.png" alt="FB" width="24"></a>
+                <a href="https://www.instagram.com/ijunior_ufmg/"><img src="instagram-icon.png" alt="IG" width="24"></a>
+                <a href="https://www.linkedin.com/company/ijunior/posts/?feedView=all"><img src="linkedin-icon.png" alt="IN" width="24"></a>
+            </div>
+            <br>
+            <p style="font-size: 0.9rem; color: #888;">UFMG – Antônio Carlos, 6627 – ICEx - Sala 2028</p>
+            <p style="font-size: 0.9rem; color: #888;">CNPJ 86.864.840/0001-18</p>
+        </div>
+        <div class="copy">
+            iJunior Soluções Digitais © 2026 TODOS OS DIREITOS RESERVADOS
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
