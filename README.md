@@ -1,4 +1,4 @@
-Para acessar o preview do site em desenvolvimento, utilize o link:
+Para acessar o preview do site em desenvolvimento, utilize o link: https://limag-henrique.github.io/site-ijunior/
 
 ---
 ## Sobre
