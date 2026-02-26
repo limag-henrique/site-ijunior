@@ -1,272 +1,384 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop - iJunior Soluções Digitais</title>
+    <title>iJunior Soluções Digitais</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .loop-benefits-viewport::-webkit-scrollbar, 
+        .tech-viewport-sc::-webkit-scrollbar,
+        .outras-viewport::-webkit-scrollbar {
+            display: none;
+        }
+        .loop-benefits-viewport, .tech-viewport-sc, .outras-viewport {
+            scrollbar-width: none; /* Firefox */
+        }
+        .carousel-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="loop">
-    
-    <div id="custom-cursor" class="custom-cursor"></div>
 
-    <header>
-        <div class="logo">
-            <img src="ijunior-logo.png" alt="iJunior" height="40">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="aboutus.html">Sobre Nós</a></li>
-                <li class="dropdown">
-                    <a href="#">Nossos Produtos ▼</a>
-                    <div class="dropdown-menu">
-                        <a href="start.html">Sites Start</a>
-                        <a href="market.html">Lojas Market</a>
-                        <a href="loop.html">Sistemas Loop</a>
-                        <a href="next.html">Aplicativos Next</a>
-                    </div>
-                </li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="ambient-blob blob-1"></div>
+<div class="ambient-blob blob-2"></div>
 
-    <section class="hero-banner">
-        <canvas id="topo-canvas"></canvas>
-        <div class="banner-content">
-            <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 10px;">iJunior Loop | Desenvolvimento de Sistemas Web</h2>
-            <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px;">Automatize Processos e Modernize o seu negócio</h1>
-            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px auto; color: #ccc;">
-                Desenvolvimento de Sistemas Web em módulos, com soluções personalizadas para automatizar processos, ganhar eficiência e escalar seus resultados.
-            </p>
-            <a href="index.html#contato" class="btn-rainbow">Solicite um orçamento</a>
-        </div>
-    </section>
 
-    <section class="section-container">
-        <div class="text-center" style="margin-bottom: 50px;">
-            <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 20px;">Por que criar um Sistema Web Personalizado?</h2>
-            <p style="max-width: 900px; margin: auto; color: #aaa; line-height: 1.6;">
-                O desenvolvimento de sistemas web personalizados é a melhor solução para empresas que buscam eficiência, automação e crescimento sustentável. Ao contrário de sistemas prontos, uma solução sob medida é criada para atender às necessidades específicas do seu negócio, sem limitações. Isso permite automatizar processos, otimizar a produtividade da equipe e escalar resultados com segurança e flexibilidade.
-            </p>
-        </div>
-
-        <div class="diferenciais-grid">
-            <div class="diferencial-item" style="border-top: 3px solid var(--highlight-1);">
-                <img src="icon-automation.png" alt="Automação">
-                <h4 style="font-size: 1.3rem;">Automatização de processos</h4>
-                <p>Ganhe tempo e produtividade.</p>
-            </div>
-            <div class="diferencial-item" style="border-top: 3px solid var(--highlight-2);">
-                <img src="icon-scale.png" alt="Escalabilidade">
-                <h4 style="font-size: 1.3rem;">Escalabilidade com alta performance</h4>
-                <p>Seu sistema cresce com o seu negócio.</p>
-            </div>
-            <div class="diferencial-item" style="border-top: 3px solid var(--highlight-1);">
-                <img src="icon-security.png" alt="Segurança">
-                <h4 style="font-size: 1.3rem;">Segurança de dados</h4>
-                <p>Segurança robusta para seus dados e operações.</p>
-            </div>
-            <div class="diferencial-item" style="border-top: 3px solid var(--highlight-2);">
-                <img src="icon-tech.png" alt="Tecnologia">
-                <h4 style="font-size: 1.3rem;">Tecnologia avançada</h4>
-                <p>Soluções modernas e integráveis.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-container" style="background: #0a0a0a; border-radius: 16px;">
-        <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 10px;">Desenvolvimento Modular</h2>
-        <h3 class="text-center" style="font-size: 1.5rem; color: #fff; margin-bottom: 50px;">O método Loop</h3>
-        
-        <div style="display: flex; flex-direction: column; gap: 20px; max-width: 800px; margin: auto;">
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-1); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">1</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Primeira etapa: Briefing e Diagnóstico</h4>
-                    <p style="color: #aaa;">Entendemos a fundo as necessidades e objetivos do seu negócio para definir a melhor solução.</p>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="iJunior" height="40">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="aboutus.html">Sobre Nós</a></li>
+            <li class="dropdown">
+                <a href="#">Nossos Produtos ▼</a>
+                <div class="dropdown-menu">
+                    <a href="start.html">Sites Start</a>
+                    <a href="market.html">Lojas Market</a>
+                    <a href="loop.html">Sistemas Loop</a>
+                    <a href="next.html">Aplicativos Next</a>
                 </div>
-            </div>
+            </li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-2); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">2</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Segunda etapa: Planejamento e Prototipação</h4>
-                    <p style="color: #aaa;">Criamos protótipos funcionais para validar a usabilidade e alinhar expectativas antes do desenvolvimento.</p>
-                </div>
-            </div>
+<section class="hero-banner">
+    <canvas id="topo-canvas"></canvas>
+    <div class="banner-content">
+        <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 10px;">iJunior Loop | Desenvolvimento de
+            Sistemas Web</h2>
+        <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px;">Automatize Processos e
+            Modernize o seu negócio</h1>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px auto; color: #ccc;">
+            Desenvolvimento de Sistemas Web em módulos, com soluções personalizadas para automatizar processos, ganhar
+            eficiência e escalar seus resultados.
+        </p>
+        <a href="index.html#contato" class="btn-rainbow">Solicite um orçamento</a>
+    </div>
+</section>
 
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-1); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">3</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Terceira etapa: Desenvolvimento do MVP</h4>
-                    <p style="color: #aaa;">Iniciamos com um MVP (Produto Mínimo Viável) para entregar rapidamente uma versão funcional do sistema, focada nas funcionalidades essenciais para validar a solução e gerar valor imediato para o negócio.</p>
-                </div>
-            </div>
+<section class="section-container" style="margin-top: 50px;">
+    <div class="text-center" style="margin-bottom: 50px;">
+        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 20px;">Por que criar um Sistema Web
+            Personalizado?</h2>
+        <p style="max-width: 900px; margin: auto; color: #aaa; line-height: 1.6;">
+            O desenvolvimento de sistemas web personalizados é a melhor solução para empresas que buscam eficiência,
+            automação e crescimento sustentável. Ao contrário de sistemas prontos, uma solução sob medida é criada para
+            atender às necessidades específicas do seu negócio, sem limitações. Isso permite automatizar processos,
+            otimizar a produtividade da equipe e escalar resultados com segurança e flexibilidade.
+        </p>
+    </div>
 
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-2); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">4</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Quarta etapa: Desenvolvimento Incremental</h4>
-                    <p style="color: #aaa;">Após a validação do MVP, seguimos com um desenvolvimento incremental, implementando novas funcionalidades de forma gradual e contínua. Essa abordagem permite ajustes rápidos, baseados no feedback dos usuários.</p>
-                </div>
-            </div>
-
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-1); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">5</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Quinta etapa: Validação e teste</h4>
-                    <p style="color: #aaa;">Realizamos testes rigorosos de performance, segurança e usabilidade, assegurando um sistema robusto e confiável.</p>
-                </div>
-            </div>
-
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-2); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">6</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Sexta etapa: Entrega e Implantação</h4>
-                    <p style="color: #aaa;">Fazemos a entrega oficial e implantamos o sistema no ambiente de produção, com suporte durante a transição.</p>
-                </div>
-            </div>
-
-            <div style="background: #111; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; border: 1px solid #222;">
-                <div style="background: var(--highlight-1); color: #fff; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0;">✓</div>
-                <div>
-                    <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Última etapa: Suporte e Evolução Contínua</h4>
-                    <p style="color: #aaa;">Oferecemos suporte pós-implantação e um plano de evolução para o sistema, com possibilidade de novas implementações e integrações.</p>
-                </div>
-            </div>
+    <div class="carousel-wrapper" style="position: relative; overflow: hidden; max-width: 1000px; margin: auto;">
+    <button class="carousel-btn" style="position: absolute; left: -10px; top: 50%; transform: translateY(-50%); z-index: 10; font-size: 1.5rem; background: var(--highlight-2); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px;" onclick="document.querySelector('.loop-benefits-viewport').scrollBy({left: -320, behavior: 'smooth'})">❮</button>
+    <div class="loop-benefits-viewport" style="display: flex; flex-wrap: nowrap; gap: 20px; overflow-x: auto; padding: 10px; scroll-behavior: smooth; scroll-snap-type: x mandatory;">
+        <div class="diferencial-item" style="flex: 0 0 auto; width: 320px; scroll-snap-align: center; border-top: 3px solid var(--highlight-1);">
+            <img src="icon-automation.png" alt="Automação">
+            <h4 style="font-size: 1.3rem;">Automatização de processos</h4>
+            <p>Ganhe tempo e produtividade.</p>
         </div>
-    </section>
-
-    <section class="section-container text-center">
-        <h3 style="color: #888; margin-bottom: 10px; font-size: 1.2rem;">Sistemas Web para Conectar, Automatizar e Escalar</h3>
-        <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 50px;">Por que escolher o iJunior Loop?</h2>
-        
-        <div class="diferenciais-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <div class="diferencial-item" style="background: #111;">
-                <img src="icon-chat.png" alt="Atendimento">
-                <h4 style="color: var(--highlight-1);">Atendimento próximo e transparente</h4>
-                <p>Comunicação direta e objetiva em todas as etapas.</p>
-            </div>
-            <div class="diferencial-item" style="background: #111;">
-                <img src="icon-gears.png" alt="Automatização">
-                <h4 style="color: var(--highlight-2);">Automatização de Processos</h4>
-                <p>Mais eficiência e produtividade para o seu negócio.</p>
-            </div>
-            <div class="diferencial-item" style="background: #111;">
-                <img src="icon-support.png" alt="Suporte">
-                <h4 style="color: var(--highlight-1);">Suporte ágil e eficiente</h4>
-                <p>Atendimento pós-entrega com foco na continuidade e eficiência.</p>
-            </div>
+        <div class="diferencial-item" style="flex: 0 0 auto; width: 320px; scroll-snap-align: center; border-top: 3px solid var(--highlight-1);">
+            <img src="icon-scale.png" alt="Escalabilidade">
+            <h4 style="font-size: 1.3rem;">Escalabilidade com alta performance</h4>
+            <p>Seu sistema cresce com o seu negócio.</p>
         </div>
-    </section>
+        <div class="diferencial-item" style="flex: 0 0 auto; width: 320px; scroll-snap-align: center; border-top: 3px solid var(--highlight-1);">
+            <img src="icon-security.png" alt="Segurança">
+            <h4 style="font-size: 1.3rem;">Segurança de dados</h4>
+            <p>Segurança robusta para seus dados e operações.</p>
+        </div>
+        <div class="diferencial-item" style="flex: 0 0 auto; width: 320px; scroll-snap-align: center; border-top: 3px solid var(--highlight-1);">
+            <img src="icon-tech.png" alt="Tecnologia">
+            <h4 style="font-size: 1.3rem;">Tecnologia avançada</h4>
+            <p>Soluções modernas e integráveis.</p>
+        </div>
+    </div>
+    <button class="carousel-btn" style="position: absolute; right: -10px; top: 50%; transform: translateY(-50%); z-index: 10; font-size: 1.5rem; background: var(--highlight-2); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px;" onclick="document.querySelector('.loop-benefits-viewport').scrollBy({left: 320, behavior: 'smooth'})">❯</button>
+</div>
+<script>
+    setInterval(() => {
+        let lsc = document.querySelector('.loop-benefits-viewport');
+        if(lsc) {
+            if(lsc.scrollLeft + lsc.clientWidth >= lsc.scrollWidth - 10) {
+                lsc.scrollTo({left: 0, behavior: 'smooth'});
+            } else {
+                lsc.scrollBy({left: 320, behavior: 'smooth'});
+            }
+        }
+    }, 2500);
+</script>
+</section>
 
-    <section class="section-container">
-        <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 10px;">Tecnologias</h2>
-        <p class="text-center" style="color: #aaa; margin-bottom: 50px;">Sistemas Web Baseados nas Melhores Tecnologias</p>
-        
-        <div class="solutions-grid" style="margin-bottom: 60px;">
-            <div class="solution-card" style="text-align: center; border-color: #F24E1E;">
-                <img src="logo-figma.png" alt="Figma" width="60" style="margin: 0 auto 20px auto; display: block;">
-                <h3 style="color: #fff;">Figma</h3>
-                <p>Protótipos e interfaces intuitivas, focadas na experiência do usuário.</p>
-            </div>
-            <div class="solution-card" style="text-align: center; border-color: #3178C6;">
-                <img src="logo-typescript.png" alt="TypeScript" width="60" style="margin: 0 auto 20px auto; display: block;">
-                <h3 style="color: #fff;">Typescript</h3>
-                <p>Código robusto, seguro e de alta performance.</p>
-            </div>
-            <div class="solution-card" style="text-align: center; border-color: #2D3748;">
-                <img src="logo-prisma.png" alt="Prisma" width="60" style="margin: 0 auto 20px auto; display: block;">
-                <h3 style="color: #fff;">Prisma</h3>
-                <p>Integração rápida e segura com bancos de dados.</p>
+<section class="section-container" style="margin-top: 50px;">
+    <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 10px;">Desenvolvimento Modular</h2>
+    <h3 class="text-center" style="font-size: 1.5rem; color: #fff; margin-bottom: 50px;">O método Loop</h3>
+
+    <div class="etapas-container" style="display: flex; flex-direction: column; gap: 40px; max-width: 700px; margin: auto; position: relative; padding-left: 30px;">
+        <!-- Pseudo Element Timeline Line Loop Azul -->
+        <div style="position: absolute; left: 10px; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, var(--highlight-2), #004d99); border-radius: 2px;"></div>
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Primeira etapa: Briefing e Diagnóstico
+                </h4>
+                <p style="color: #aaa;">Entendemos a fundo as necessidades e objetivos do seu negócio para definir a
+                    melhor solução.</p>
             </div>
         </div>
 
-        <div style="background: linear-gradient(135deg, #111, #000); padding: 50px; border-radius: 16px; border: 1px solid #333; text-align: center;">
-            <h2 style="font-size: 2.2rem; font-style: italic; color: #fff; margin-bottom: 20px;">"Software é algo que está sempre em construção"</h2>
-            <p style="font-size: 1.1rem; color: #aaa; max-width: 700px; margin: auto; line-height: 1.6;">
-                Não adianta planejar um sistema gigante para no final descobrir que seu usuário não precisa daquelas funções ou que não haviam outras prioridades.
-            </p>
-        </div>
-    </section>
-
-    <section class="section-container">
-        <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 40px;">Perguntas mais frequentes</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">O que é a iJunior e como ela pode ajudar meu negócio?</button>
-                <div class="faq-answer"><p>A iJunior é especializada no desenvolvimento de sites, lojas virtuais, aplicativos e sistemas web personalizados. Nosso objetivo é ajudar empresas a fortalecer sua presença digital, otimizar processos e alavancar vendas com soluções eficientes e acessíveis.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Quais as vantagens de ter um sistema web sob medida em vez de usar uma solução pronta?</button>
-                <div class="faq-answer"><p>Um sistema personalizado garante maior flexibilidade, escalabilidade e integração com as operações do seu negócio. Diferente das soluções prontas, ele é adaptado às suas necessidades e evolui conforme sua empresa cresce.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Quanto tempo leva para desenvolver um sistema web?</button>
-                <div class="faq-answer"><p>O prazo varia conforme a complexidade e o escopo do projeto. Trabalhamos com desenvolvimento incremental e MVP para entregar versões funcionais rapidamente, com melhorias contínuas em ciclos curtos. Projetos simples podem levar de 30 a 90 dias; sistemas mais robustos exigem prazos maiores.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">O sistema desenvolvido vai funcionar em celulares e tablets?</button>
-                <div class="faq-answer"><p>Sim! Todos os sistemas que desenvolvemos são responsivos, ou seja, funcionam de forma otimizada em dispositivos móveis e desktops.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">O sistema será seguro? Como garantem isso?</button>
-                <div class="faq-answer"><p>Sim! Adotamos boas práticas de segurança, como autenticação robusta, criptografia de dados e testes de segurança. Além disso, trabalhamos com práticas atualizadas de desenvolvimento seguro, alinhadas com as melhores normas do mercado.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">É possível escalar o sistema conforme minha empresa cresce?</button>
-                <div class="faq-answer"><p>Com certeza. Nossos sistemas são projetados com arquitetura escalável, permitindo que novos recursos e usuários sejam incorporados sem perda de performance.</p></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Qual o valor para desenvolver um sistema web?</button>
-                <div class="faq-answer"><p>O valor do desenvolvimento de um sistema web depende de diversos fatores, como complexidade, funcionalidades específicas, integrações e o tempo de desenvolvimento.</p></div>
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Segunda etapa: Planejamento e
+                    Prototipação</h4>
+                <p style="color: #aaa;">Criamos protótipos funcionais para validar a usabilidade e alinhar expectativas
+                    antes do desenvolvimento.</p>
             </div>
         </div>
-    </section>
 
-    <section class="section-container text-center" style="padding-bottom: 100px;">
-        <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Desenvolva o seu sistema web com a iJunior</h2>
-        <a href="https://wa.me/5531995640142" class="btn-rainbow" style="font-size: 1.2rem; padding: 20px 40px; display: inline-block;" target="_blank">Entre em contato</a>
-    </section>
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Terceira etapa: Desenvolvimento do MVP
+                </h4>
+                <p style="color: #aaa;">Iniciamos com um MVP (Produto Mínimo Viável) para entregar rapidamente uma
+                    versão funcional do sistema, focada nas funcionalidades essenciais para validar a solução e gerar
+                    valor imediato para o negócio.</p>
+            </div>
+        </div>
 
-    <a href="https://wa.me/5531996575102" class="float-whatsapp" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
-    </a>
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Quarta etapa: Desenvolvimento
+                    Incremental</h4>
+                <p style="color: #aaa;">Após a validação do MVP, seguimos com um desenvolvimento incremental,
+                    implementando novas funcionalidades de forma gradual e contínua. Essa abordagem permite ajustes
+                    rápidos, baseados no feedback dos usuários.</p>
+            </div>
+        </div>
+
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Quinta etapa: Validação e teste</h4>
+                <p style="color: #aaa;">Realizamos testes rigorosos de performance, segurança e usabilidade, assegurando
+                    um sistema robusto e confiável.</p>
+            </div>
+        </div>
+
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Sexta etapa: Entrega e Implantação</h4>
+                <p style="color: #aaa;">Fazemos a entrega oficial e implantamos o sistema no ambiente de produção, com
+                    suporte durante a transição.</p>
+            </div>
+        </div>
+
+        <div class="etapa-item liquid-glass-box" style="background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; margin-bottom: 20px;">
+            <div>
+                <h4 style="color: #fff; margin-bottom: 5px; font-size: 1.2rem;">Última etapa: Suporte e Evolução
+                    Contínua</h4>
+                <p style="color: #aaa;">Oferecemos suporte pós-implantação e um plano de evolução para o sistema, com
+                    possibilidade de novas implementações e integrações.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-container text-center">
+    <h3 style="color: #888; margin-bottom: 10px; font-size: 1.2rem;">Sistemas Web para Conectar, Automatizar e Escalar
+    </h3>
+    <h2 class="gradient-text" style="font-size: 2.5rem; margin-bottom: 50px;">Por que escolher o iJunior Loop?</h2>
+
+    <div class="diferenciais-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="diferencial-item" style="background: #111;">
+            <img src="icon-chat.png" alt="Atendimento">
+            <h4 style="color: var(--highlight-1);">Atendimento próximo e transparente</h4>
+            <p>Comunicação direta e objetiva em todas as etapas.</p>
+        </div>
+        <div class="diferencial-item" style="background: #111;">
+            <img src="icon-gears.png" alt="Automatização">
+            <h4 style="color: var(--highlight-1);">Automatização de Processos</h4>
+            <p>Mais eficiência e produtividade para o seu negócio.</p>
+        </div>
+        <div class="diferencial-item" style="background: #111;">
+            <img src="icon-support.png" alt="Suporte">
+            <h4 style="color: var(--highlight-1);">Suporte ágil e eficiente</h4>
+            <p>Atendimento pós-entrega com foco na continuidade e eficiência.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-container">
+    <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 10px;">Tecnologias</h2>
+    <p class="text-center" style="color: #aaa; margin-bottom: 50px;">Sistemas Web Baseados nas Melhores Tecnologias</p>
+
+    <div class="carousel-wrapper" style="position: relative; overflow: hidden; max-width: 800px; margin: 0 auto 60px auto;">
+    <div class="tech-viewport-sc" style="display: flex; flex-wrap: nowrap; gap: 20px; overflow-x: auto; padding: 10px; scroll-behavior: smooth; scroll-snap-type: x mandatory;">
+        <div style="flex-shrink: 0; scroll-snap-align: center; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; flex: 0 0 auto; width: 250px; text-align: center;">
+            <img src="logo-figma.png" alt="Figma" width="50" style="margin: 0 auto 10px auto; display: block;">
+            <h4 style="color: #fff; font-size: 1.3rem; margin-bottom: 10px;">Figma</h4>
+            <p style="font-size: 1rem; color: #aaa; line-height: 1.5;">Interfaces intuitivas.</p>
+        </div>
+        <div style="flex-shrink: 0; scroll-snap-align: center; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; flex: 0 0 auto; width: 250px; text-align: center;">
+            <img src="logo-typescript.png" alt="TypeScript" width="50" style="margin: 0 auto 10px auto; display: block;">
+            <h4 style="color: #fff; font-size: 1.3rem; margin-bottom: 10px;">Typescript</h4>
+            <p style="font-size: 1rem; color: #aaa; line-height: 1.5;">Alta performance.</p>
+        </div>
+        <div style="flex-shrink: 0; scroll-snap-align: center; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; flex: 0 0 auto; width: 250px; text-align: center;">
+            <img src="logo-prisma.png" alt="Prisma" width="50" style="margin: 0 auto 10px auto; display: block;">
+            <h4 style="color: #fff; font-size: 1.3rem; margin-bottom: 10px;">Prisma</h4>
+            <p style="font-size: 1rem; color: #aaa; line-height: 1.5;">Integração em bancos.</p>
+        </div>
+    </div>
+    <button class="carousel-btn" style="position: absolute; right: -10px; top: 50%; transform: translateY(-50%); z-index: 10; font-size: 1.5rem; background: var(--highlight-2); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px;" onclick="document.querySelector('.loop-benefits-viewport').scrollBy({left: 320, behavior: 'smooth'})">❯</button>
+</div>
+<script>
+    setInterval(() => {
+        let tsc = document.querySelector('.tech-viewport-sc');
+        if(tsc) {
+            if(tsc.scrollLeft + tsc.clientWidth >= tsc.scrollWidth - 10) {
+                tsc.scrollTo({left: 0, behavior: 'smooth'});
+            } else {
+                tsc.scrollBy({left: 180, behavior: 'smooth'});
+            }
+        }
+    }, 3500);
+</script>
+
+    <div
+        style="background: linear-gradient(135deg, #111, #000); padding: 50px; border-radius: 16px; border: 1px solid #333; text-align: center;">
+        <h2 style="font-size: 2.2rem; font-style: italic; color: #fff; margin-bottom: 20px;">"Software é algo que está
+            sempre em construção"</h2>
+        <p style="font-size: 1.1rem; color: #aaa; max-width: 700px; margin: auto; line-height: 1.6;">
+            Não adianta planejar um sistema gigante para no final descobrir que seu usuário não precisa daquelas funções
+            ou que não haviam outras prioridades.
+        </p>
+    </div>
+</section>
+
+<section class="section-container" style="margin-top: 150px;">
+    <h2 class="gradient-text text-center" style="font-size: 2.5rem; margin-bottom: 40px;">Perguntas mais frequentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">O que é a iJunior e como ela pode ajudar meu negócio?</button>
+            <div class="faq-answer">
+                <p>A iJunior é especializada no desenvolvimento de sites, lojas virtuais, aplicativos e sistemas web
+                    personalizados. Nosso objetivo é ajudar empresas a fortalecer sua presença digital, otimizar
+                    processos e alavancar vendas com soluções eficientes e acessíveis.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quais as vantagens de ter um sistema web sob medida em vez de usar uma solução
+                pronta?</button>
+            <div class="faq-answer">
+                <p>Um sistema personalizado garante maior flexibilidade, escalabilidade e integração com as operações do
+                    seu negócio. Diferente das soluções prontas, ele é adaptado às suas necessidades e evolui conforme
+                    sua empresa cresce.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Quanto tempo leva para desenvolver um sistema web?</button>
+            <div class="faq-answer">
+                <p>O prazo varia conforme a complexidade e o escopo do projeto. Trabalhamos com desenvolvimento
+                    incremental e MVP para entregar versões funcionais rapidamente, com melhorias contínuas em ciclos
+                    curtos. Projetos simples podem levar de 30 a 90 dias; sistemas mais robustos exigem prazos maiores.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O sistema desenvolvido vai funcionar em celulares e tablets?</button>
+            <div class="faq-answer">
+                <p>Sim! Todos os sistemas que desenvolvemos são responsivos, ou seja, funcionam de forma otimizada em
+                    dispositivos móveis e desktops.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">O sistema será seguro? Como garantem isso?</button>
+            <div class="faq-answer">
+                <p>Sim! Adotamos boas práticas de segurança, como autenticação robusta, criptografia de dados e testes
+                    de segurança. Além disso, trabalhamos com práticas atualizadas de desenvolvimento seguro, alinhadas
+                    com as melhores normas do mercado.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">É possível escalar o sistema conforme minha empresa cresce?</button>
+            <div class="faq-answer">
+                <p>Com certeza. Nossos sistemas são projetados com arquitetura escalável, permitindo que novos recursos
+                    e usuários sejam incorporados sem perda de performance.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Qual o valor para desenvolver um sistema web?</button>
+            <div class="faq-answer">
+                <p>O valor do desenvolvimento de um sistema web depende de diversos fatores, como complexidade,
+                    funcionalidades específicas, integrações e o tempo de desenvolvimento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-container text-center" style="padding-bottom: 100px;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Desenvolva o seu sistema web com a iJunior</h2>
+    <a href="https://wa.me/5531995640142" class="btn-rainbow"
+        style="font-size: 1.2rem; padding: 20px 40px; display: inline-block;" target="_blank">Entre em contato</a>
+</section>
+
+<a href="https://wa.me/5531996575102" class="float-whatsapp" target="_blank">
+    <img src="images/WhatsApp.webp" alt="WhatsApp">
+</a>
 
     <footer>
-        <div class="footer-col">
+        <div class="footer-col" style="flex: 1.5; min-width: 250px;">
             <h4>Quem somos</h4>
-            <p>Empresa júnior de Computação da UFMG, há mais de 30 anos desenvolvendo soluções digitais de excelência e transformando realidades.</p>
+            <p>Empresa júnior de Computação da UFMG, há mais de 30 anos desenvolvendo soluções digitais de
+                excelência e transformando realidades.</p>
             <br>
-            <a href="https://wa.me/5531996575102" class="btn-rainbow" style="display: inline-block; text-align:center;">Converse conosco!</a>
+            <a href="https://wa.me/5531996575102" class="btn-rainbow"
+                style="display: inline-block; text-align:center;">Converse conosco!</a>
         </div>
-        <div class="footer-col">
+        <div class="footer-col" style="flex: 1; min-width: 200px;">
             <h4>Nossos Serviços</h4>
             <a href="start.html">Desenvolvimento de Sites</a>
             <a href="market.html">Desenvolvimento de Lojas Virtuais</a>
             <a href="loop.html">Desenvolvimento de Sistemas</a>
             <a href="next.html">Desenvolvimento de Aplicativos</a>
         </div>
-        <div class="footer-col">
-            <h4>Contato</h4>
-            <p>contato@ijunior.com.br</p>
-            <p>+55 31 99657-5102</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/ufmginformaticajr"><img src="facebook-icon.png" alt="FB" width="24"></a>
-                <a href="https://www.instagram.com/ijunior_ufmg/"><img src="instagram-icon.png" alt="IG" width="24"></a>
-                <a href="https://www.linkedin.com/company/ijunior/posts/?feedView=all"><img src="linkedin-icon.png" alt="IN" width="24"></a>
+        <div class="footer-col" style="flex: 1.5; min-width: 280px;">
+            <h4>Contato e Localização</h4>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                <img src="images/telefone.png" alt="Telefone" width="20">
+                <span>+55 31 99657-5102</span>
             </div>
-            <br>
-            <p style="font-size: 0.9rem; color: #888;">UFMG – Antônio Carlos, 6627 – ICEx - Sala 2028</p>
-            <p style="font-size: 0.9rem; color: #888;">CNPJ 86.864.840/0001-18</p>
-        </div>
-        <div class="copy">
-            iJunior Soluções Digitais © 2026 TODOS OS DIREITOS RESERVADOS
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                <img src="images/whatsapp.png" alt="WhatsApp" width="20">
+                <span>+55 31 99657-5102</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                <img src="images/relogio.png" alt="Horário" width="20">
+                <span>Seg - Sex: 08:00 - 18:00</span>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
+                <img src="images/mapa.png" alt="Endereço" width="20" style="margin-top: 5px;">
+                <span>Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901<br>Instituto de Ciências Exatas (ICEx) - Sala 4038</span>
+            </div>
+            <div class="social-icons" style="margin-top: 20px;">
+                <a href="https://www.facebook.com/ufmginformaticajr"><img src="images/facebook.png" alt="FB" width="24"></a>
+                <a href="https://www.instagram.com/ijunior_ufmg/"><img src="images/instagram.png" alt="IG" width="24"></a>
+                <a href="https://www.linkedin.com/company/ijunior/posts/?feedView=all"><img src="images/linkedin.png" alt="IN" width="24"></a>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
+
 </html>
