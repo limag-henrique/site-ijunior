@@ -40,7 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         window.addEventListener('resize', updateCanvasSize);
 
+        let isVisible = true;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                isVisible = entry.isIntersecting;
+                if (isVisible) requestAnimationFrame(drawTopography);
+            });
+        });
+        observer.observe(canvas);
+
         function drawTopography() {
+            if (!isVisible) return;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.strokeStyle = highlightColor;
             ctx.lineWidth = 2.4;
@@ -94,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
             ctx.globalAlpha = 1;
             requestAnimationFrame(drawTopography);
         }
-        drawTopography();
     }
 
     // 3. Calculadora de Preços Dinâmica
